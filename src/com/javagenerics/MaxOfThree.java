@@ -12,9 +12,9 @@ public class MaxOfThree {
         System.out.println("Enter 3rd Number: ");
         Integer third = input.nextInt();
         Integer max = first;
-        if (second > max)
+        if (second.compareTo(max)>0)
             max = second;
-        if (third > max)
+        if (third.compareTo(max)>0)
             max = third;
         System.out.printf("The Maximum of three numbers is: "+ max);
     }
