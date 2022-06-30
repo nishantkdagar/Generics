@@ -6,12 +6,12 @@ public class MaxOfThree {
     public static void largest() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter 1st Number: ");
-        Integer first = input.nextInt();
+        Double first = input.nextDouble();
         System.out.println("Enter 2nd Number: ");
-        Integer second = input.nextInt();
+        Double second = input.nextDouble();
         System.out.println("Enter 3rd Number: ");
-        Integer third = input.nextInt();
-        Integer max = first;
+        Double third = input.nextDouble();
+        Double max = first;
         if (second.compareTo(max)>0)
             max = second;
         if (third.compareTo(max)>0)
@@ -20,6 +20,7 @@ public class MaxOfThree {
     }
 
     public static void main(String[] args) {
+
         MaxOfThree.largest();
     }
 }
